@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Barriecito|Josefin+Sans|Roboto|Rubik+Mono+One&display=swap');
+
 .App {
   text-align: center;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: auto;
   pointer-events: none;
+  width: 100px;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,6 +24,79 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.jm-container {
+  padding: 2% 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1800px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.jm-col {
+  height: 280px;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.jm-col a {
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.jm-col a:hover {
+  box-shadow: 0 20px 38px rgba(0, 0, 0, 0.15);
+}
+
+.news-title {
+  padding: 10px;
+}
+
+.news-title h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 17px;
+  text-align: left;
+  color: black;
+}
+
+.news-image {
+  position: relative;
+  height: 60%;
+  width: 100%;
+}
+
+.news-image img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .jm-col {
+    margin-bottom: 20px;
+    width: 39%;
+  }
+}
+
+@media (max-width: 575px) {
+  .jm-col {
+    width: 85%;
+  }
+
+  .jm-container {
+    flex-direction: column;
+  }
 }
 
 @keyframes App-logo-spin {
